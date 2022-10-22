@@ -1,0 +1,23 @@
+<section class="padded">
+    <div class="container">
+      <h2>Top Juegos</h2>
+
+      <div class="row row-cols-1 row-cols-md-3 g-4" >
+
+        <div class="col" *ngFor=" let item of listaTop">
+          <div class="card">
+            <img src="https://brunoraffwebservice.000webhostapp.com/{{item.Imagen_juego}}" class="card-img-top img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{item.Nom_juego}}</h5>
+              <p class="card-text">{{item.Desarrollador_juego}}</p>
+              <p>{{item.Genero_juego}}</p>
+              <p>{{item.Precio_juego}}</p>
+            </div>
+          </div>
+        </div>
+
+      </div> 
+               
+    </div>
+  </section>
+

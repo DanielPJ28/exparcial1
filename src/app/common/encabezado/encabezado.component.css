@@ -1,0 +1,15 @@
+#encabezado{
+    color: #fff;
+    background-color: var(--color1) ;
+    
+}
+
+.container{
+    margin: 2%;
+    padding: 0;
+}
+
+#pi{
+    text-align: right;
+}
+

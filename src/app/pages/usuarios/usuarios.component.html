@@ -1,0 +1,24 @@
+<section id="tienda" class="padded">
+  <div class="container">     
+      <h2>Servicios del Cliente</h2>
+
+      <div class="row row-cols-8 row-cols-md-2 g-4">
+          <div class="col">
+              <ul class="list-group">
+                  <li class="list-group-item" *ngFor="let item of listaServiciosCliente" 
+                      (click)="seleccionarItem(item)" 
+                      [class.active] = "item === servicioElegido"> 
+                      <h5>{{item.empresa}}, {{item.nombres}}</h5>
+                      <small>{{item.cargo}}, {{item.ciudad}}</small>
+                  </li>
+              </ul>
+          </div>
+
+          <div class="col" *ngIf="servicioElegido">
+              <h3>{{servicioElegido.empresa}}, {{servicioElegido.nombres}}</h3>
+              <p>{{servicioElegido.cargo}}, {{servicioElegido.ciudad}}</p>
+          </div>
+      </div>
+
+  </div>
+</section>

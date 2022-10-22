@@ -1,0 +1,124 @@
+
+
+<section id="juegos" class="padded">
+  <div id="containerBanner">
+    <div class="image"></div>
+    <div id="bannerTxt">
+      <h1 class="uppercase">
+        <strong>Juegos</strong>
+      </h1>
+      <p class="lead">Tabla de datos de juegos</p>
+    </div>
+  </div>
+  <div id="tablaJuegos">
+    <table class="table">
+      <thead class="table-light">
+        <tr>
+          <th scope="col">Fecha</th>
+          <th scope="col">Nombre local</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">País</th>
+          <th scope="col">Tipo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of listaJuegos">
+          <td>{{item.date}}</td>
+          <td>{{item.localName}}</td>
+          <td>{{item.name}}</td>
+          <td>{{item.countryCode}}</td>
+          <td>{{item.type}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="row">
+    <div class="col medium-3 large-3" id="colPrecios">
+      <div class="col-inner">
+        <h3>Precios</h3>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+          magna aliquam erat volutpat.reLorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy. Add any text
+          here</p>
+      </div>
+      <style>#colPrecios>.col-inner{padding:0 20px 0 0}</style>
+    </div>
+    <div id="precio1" class="col medium-3 large-3">
+      <div class="col-inner">
+        <div class="pricing-table-wrapper dark">
+          <div class="pricing-table ux_price_table text-center box-shadow-3-hover" style="background-color:rgb(122, 44, 205);">
+            <div class="princing-table-header">
+              <div class="title uppercase strong">Plata</div>
+              <div class="price is-xxlarge">29$</div>
+              <div class="description is-small"> Enter description here...</div>
+            </div>
+            <div class="pricing-table-items items">
+              <div class="bullet-item">
+                <span class="text">Enter text here..</span>
+              </div>
+              <div class="bullet-item">
+                <span class="text">Enter text here..</span>
+              </div>
+              <div class="bullet-item">
+                <span class="text">Enter text heres..</span>
+              </div>
+              <a class="button white" style="border-radius:99px;"> <span>Click me!</span> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="precio2" class="col medium-3 large-3">
+      <div class="col-inner">
+        <div class="pricing-table-wrapper dark">
+          <div class="pricing-table ux_price_table text-center box-shadow-3-hover" style="background-color:rgba(0, 0, 0, 0.99);">
+            <div class="princing-table-header">
+              <div class="title uppercase strong">Oro</div>
+              <div class="price is-xxlarge">49$</div>
+              <div class="description is-small"> Enter description here...</div>
+            </div>
+            <div class="pricing-table-items items">
+              <div class="bullet-item">
+                <span class="text">Enter text here..</span>
+              </div>
+              <div class="bullet-item">
+                <span class="text">Enter text here..</span>
+              </div>
+              <div class="bullet-item">
+                <span class="text">Enter text here..</span>
+              </div>
+              <div class="bullet-item">
+                <span class="text">Enter text here..</span>
+              </div>
+              <a class="button white is-outline"> <span>Click me!</span> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="precio3" class="col medium-3 large-3">
+      <div class="col-inner">
+        <div class="pricing-table-wrapper dark">
+          <div class="pricing-table ux_price_table text-center box-shadow-3-hover">
+            <div class="princing-table-header">
+              <div class="title uppercase strong">Platino</div>
+              <div class="price is-xxlarge">129$</div>
+              <div class="description is-small"> Enter description here...</div>
+            </div>
+            <div class="pricing-table-items items">
+              <div class="bullet-item">
+                <span class="text">Enter text here..</span>
+              </div>
+              <div class="bullet-item is-disabled">
+                <span class="text">Enter text here..</span>
+              </div>
+              <div class="bullet-item is-disabled">
+                <span class="text">Enter text here..</span>
+              </div>
+              <a class="button white is-underline"> <span>Click me!</span> </a>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

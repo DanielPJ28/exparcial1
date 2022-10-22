@@ -1,0 +1,49 @@
+/* You can add global styles to this file, and also import other style files */
+
+body{
+    font-family: 'Exo';
+
+}
+:root{
+    --color1: #0e5af2;
+    --color2: #55595d;
+    --color3: #1a1a1a;
+    --color-blanco: #FFFFFF;
+    --color-negro: #000000;
+    --gris-claro: #CCCCCC;
+    --gris-oscuro: #333333;
+    --colortitle:#555;
+    --colorbodyblanco:#fff;
+    --colorbotonazul:#446084;
+    --colorhover:#333;
+}
+
+h1{
+    font-weight: 900;
+    font-size: 36px;
+    letter-spacing: -2px;
+    font-family: 'Exo';
+}
+
+h2{
+    font-weight: 300;
+    font-size: 32px;
+    font-family: 'Exo';
+    text-align: center;
+    padding-bottom: 30px;
+    
+}
+
+h3{
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Exo';
+    
+}
+
+.padded{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}

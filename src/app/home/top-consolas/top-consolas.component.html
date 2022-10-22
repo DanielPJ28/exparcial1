@@ -1,0 +1,24 @@
+
+<section id="topconsola" class="padded">
+    <div class="container">
+        <h2>Top - Juegos - Consolas</h2>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <tr>
+                    <th id="encabezado">Juego</th>
+                    <th id="encabezado">Consola</th>
+                    <th id="encabezado">Ranking</th>
+                    <th id="encabezado">Tipo de juego</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of listaTop">
+                    <td>{{item.nom_game}}</td>
+                    <td>{{item.consola}}</td>
+                    <td>{{item.rankventas}}</td>
+                    <td>{{item.tipo_juego }}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
